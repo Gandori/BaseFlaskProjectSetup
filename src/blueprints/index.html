@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>{{title}}</title>
+</head>
+<body>
+        <h1>{{title}}</h1>
+        {% include 'header.html' %}
+    <main>
+        {% block content %}
+        {% endblock content %}
+    </main>
+    {% include 'footer.html' %}
+
+    <style>
+        :root
+        {
+            --black: rgb(50, 50, 50);
+            --white: rgb(200, 200, 200);
+        }
+        html, body
+        {
+            width: 100%;
+            height: 100%;
+        }
+        body
+        {
+            background-color: var(--black);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            color: var(--white);
+            margin: 0px;
+        }
+        main
+        {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+    </style>
+</body>
+</html>

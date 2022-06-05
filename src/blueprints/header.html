@@ -1,0 +1,24 @@
+<header id="header">
+    <a href="{{url_for('home.index')}}">Home</a>
+    <a href="{{url_for('admin.index')}}">Admin</a>
+    <a href="{{url_for('form.signin')}}">Signin</a>
+    <a href="{{url_for('form.signup')}}">Signup</a>
+</header>
+
+<style>
+    #header
+    {
+        display: flex;
+        border: 1px solid var(--white);
+        padding: 5px;
+        justify-content: space-between;
+        width: 400px;
+        margin: auto;
+    }
+    #header > a
+    {
+        color: var(--white);
+        cursor: pointer;
+        text-decoration: none;
+    }
+</style>
