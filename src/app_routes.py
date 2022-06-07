@@ -1,3 +1,5 @@
+from flask import redirect, url_for
+
 def errorhandler_404(*args):
     return 'Page not Found'
 
@@ -11,3 +13,6 @@ def before_first_request():
 
 def before_request():
     pass
+
+def index():
+    return redirect(url_for('signin.index'))

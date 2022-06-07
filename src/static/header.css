@@ -1,0 +1,17 @@
+#header
+{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid var(--white);
+}
+#header a
+{
+    color: var(--white);
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+}
